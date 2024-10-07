@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WurstClan Information</title>
+
+    <!-- Google Fonts for Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #111, #333); /* Gradient background */
+            color: white;
+            overflow-x: hidden; /* Prevents horizontal scrolling */
+        }
+
+        h1, h2 {
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 2px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: #222;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            border-bottom: 2px solid #ff4d4d;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar a {
+            text-transform: uppercase;
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #ff4d4d;
+        }
+
+        .navbar .logo img {
+            height: 50px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('https://i.imgur.com/G9DcX4W.jpg'); /* Replace with a Minecraft-themed image */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+            z-index: 0;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin: 0;
+            z-index: 1;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            z-index: 1;
+        }
+
+        .hero .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            margin-top: 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            background: #ff4d4d;
+            border-radius: 50px;
+            transition: background 0.3s ease, transform 0.3s ease;
+            z-index: 1;
+            box-shadow: 0px 6px 20px rgba(255, 77, 77, 0.6); 
+        }
+
+        .hero .btn:hover {
+            background: #ff6666;
+            transform: translateY(-5px);
+        }
+
+        /* Main Section */
+        .main-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .main-section h2 {
+            font-size: 2.5rem;
+            color: #ff4d4d;
+            margin-bottom: 20px;
+        }
+
+        .main-section p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding-bottom: 40px;
+        }
+
+        .link-container {
+            margin-top: 2rem;
+        }
+
+        .link-container a {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #fff;
+            background: linear-gradient(145deg, darkred, #cc3300); 
+            border: 2px solid transparent;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .link-container a:hover {
+            background: linear-gradient(145deg, #ff6666, #ff4d4d); 
+            box-shadow: 0px 6px 20px rgba(255, 77, 77, 0.6); 
+            transform: translateY(-5px);
+            border-color: #fff;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+            color: #aaa;
+            font-size: 0.8rem;
+            margin-top: 50px;
+            border-top: 2px solid #ff4d4d;
+        }
+       
+     
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+        
+        </div>
+        <ul>
+            <li><a  href="#about">About</a></li>
+            <li><a  href="#community">Community</a></li>
+            <li><a  href="#links">Links</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Join the Adventure with WurstClan!</h1>
+        <p>Your Minecraft community awaits</p>
+        <a href="https://discord.gg/89z9paw2R3" class="btn">Join Now</a>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="main-section" id="about">
+        <h2>About WurstClan</h2>
+        <p>WurstClan is more than just a Discord server; it’s a thriving community captured by a shared passion for Minecraft and the adventures that come with it. With over 100 members and a welcoming atmosphere, it's a place where friendships blossom and gamers unite. We focus on various popular Minecraft servers like 8b8t, 6b6t, Kaboom, and the new anarchy server Verdadeiros.</p>
+        <p>Even though we don’t host our own Minecraft servers, our love for these gaming experiences brings us together in ways that make every session memorable. The members here share tips, strategies, and funny stories that keep the Minecraft spirit alive long after the game ends.</p>
+    </div>
+
+    <div class="main-section" id="community">
+        <h2>Our Community</h2>
+        <p>What makes WurstClan stand out is how we celebrate our community’s growth and engagement. As a member, you’ll have the chance to level up and unlock access to different clan bases, with a total of ten bases to discover. Each base has its own unique vibe, providing members something to strive for while enhancing the overall experience.</p>
+        <p>Our staff is friendly and always willing to help, ensuring that everyone feels comfortable and valued. Plus, we’ve developed our own Discord bot, complete with a wide variety of commands that can enhance your experience—some useful, others just for fun that might raise eyebrows and bring out laughter among the crowd.</p>
+    </div>
+
+    <!-- Links Section -->
+    <div class="main-section" id="links">
+        <h2>Explore More</h2>
+        <div class="link-container">
+            <a id="dc-inv" href="https://discord.gg/89z9paw2R3">🎮 Join The Discord!</a>
+            <a id="pc" href="">🤝 request alliance (unavailable)</a>
+            <a id="yt" href="https://www.youtube.com/@WurstClan">📺 WurstClan Youtube!</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>WurstClan is about fun, connection, and growth. Join us today for an unforgettable Minecraft experience.</p>
+        <p>Website by: Flomega303</p>
+    </footer>
+
+</body>
+</html>
